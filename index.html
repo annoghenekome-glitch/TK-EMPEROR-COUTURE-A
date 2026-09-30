@@ -1,306 +1,312 @@
+
+
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>TK-EMPEROR COUTURE</title>
+<title>TK Emperor Couture</title>
 
-  <style>
+<style>
 
-    * { box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-    body {
+body {
 
-      margin: 0;
+  margin: 0;
 
-      font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 
-      background: #0b0b0b;
+  color: #292323;
 
-      color: #fff;
+  background: #fffaf7;
 
-    }
+}
 
-    header {
+header {
 
-      padding: 22px 15px;
+  background: #292323;
 
-      text-align: center;
+  color: white;
 
-      border-bottom: 1px solid #b89550;
+  padding: 22px 15px;
 
-    }
+  text-align: center;
 
-    header h1 {
+}
 
-      color: #d6b46a;
+header h1 {
 
-      letter-spacing: 3px;
+  margin: 0;
 
-      font-size: 25px;
+  font-size: 28px;
 
-    }
+  letter-spacing: 2px;
 
-    nav a {
+}
 
-      color: white;
+header p {
 
-      text-decoration: none;
+  color: #e5c6ad;
 
-      margin: 0 9px;
+  margin-bottom: 0;
 
-      font-size: 13px;
+}
 
-    }
+nav {
 
-    .hero {
+  background: #453532;
 
-      min-height: 480px;
+  padding: 14px;
 
-      padding: 100px 20px;
+  text-align: center;
 
-      text-align: center;
+}
 
-      background: linear-gradient(140deg, #171717, #383027, #101010);
+nav a {
 
-      display: flex;
+  color: white;
 
-      flex-direction: column;
+  text-decoration: none;
 
-      align-items: center;
+  margin: 0 10px;
 
-      justify-content: center;
+  font-size: 14px;
 
-    }
+}
 
-    .hero p {
+.hero {
 
-      color: #d6b46a;
+  text-align: center;
 
-      letter-spacing: 4px;
+  padding: 55px 20px;
 
-    }
+  background: #f2e5dc;
 
-    .hero h2 {
+}
 
-      font-size: 42px;
+.hero h2 {
 
-      margin: 15px 0;
+  font-size: 32px;
 
-    }
+  margin: 0 0 12px;
 
-    .hero .intro {
+}
 
-      color: #ddd;
+.hero p {
 
-      letter-spacing: 1px;
+  line-height: 1.7;
 
-      line-height: 1.7;
+}
 
-    }
+.btn {
 
-    .btn {
+  display: inline-block;
 
-      display: inline-block;
+  background: #65483e;
 
-      background: #c7a45e;
+  color: white;
 
-      color: #111;
+  padding: 13px 24px;
 
-      padding: 15px 28px;
+  text-decoration: none;
 
-      margin-top: 20px;
+  margin-top: 15px;
 
-      text-decoration: none;
+  border-radius: 4px;
 
-      font-weight: bold;
+}
 
-    }
+section {
 
-    section {
+  padding: 40px 18px;
 
-      padding: 55px 20px;
+  text-align: center;
 
-      text-align: center;
+}
 
-    }
+section h2 {
 
-    h2 { color: #d6b46a; }
+  color: #65483e;
 
-    .collections {
+  margin-bottom: 25px;
 
-      display: grid;
+}
 
-      grid-template-columns: 1fr;
+.gallery {
 
-      gap: 18px;
+  display: grid;
 
-      max-width: 850px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
-      margin: 30px auto;
+  gap: 20px;
 
-    }
+  max-width: 1000px;
 
-    .item {
+  margin: auto;
 
-      background: #1b1b1b;
+}
 
-      border: 1px solid #4b3b20;
+.gallery img {
 
-      padding: 35px 15px;
+  width: 100%;
 
-    }
+  height: 300px;
 
-    .item h3 { color: #d6b46a; }
+  object-fit: cover;
 
-    .about {
+  border-radius: 5px;
 
-      background: #171717;
+}
 
-      line-height: 1.8;
+.item h3 {
 
-    }
+  margin-bottom: 5px;
 
-    footer {
+}
 
-      padding: 25px;
+.about {
 
-      text-align: center;
+  background: #f2e5dc;
 
-      color: #aaa;
+  line-height: 1.8;
 
-      border-top: 1px solid #b89550;
+}
 
-      font-size: 13px;
+footer {
 
-    }
+  background: #292323;
 
-    @media (min-width: 600px) {
+  color: white;
 
-      .collections { grid-template-columns: repeat(3, 1fr); }
+  text-align: center;
 
-      .hero h2 { font-size: 60px; }
+  padding: 30px 15px;
 
-    }
+  line-height: 1.8;
 
-  </style>
+}
+
+footer a { color: #e5c6ad; }
+
+</style>
 
 </head>
 
 <body>
 
-  <header>
+<header>
 
-    <h1>TK-EMPEROR</h1>
+  <h1>TK EMPEROR COUTURE</h1>
 
-    <nav>
+  <p>Elegance in every stitch, styles that define you</p>
 
-      <a href="#home">Home</a>
+</header>
 
-      <a href="#collections">Collections</a>
+<nav>
 
-      <a href="#about">About</a>
+  <a href="#home">Home</a>
 
-      <a href="#contact">Contact</a>
+  <a href="#collection">Collection</a>
 
-    </nav>
+  <a href="#about">About</a>
 
-  </header>
+  <a href="#contact">Contact</a>
 
-  <div class="hero" id="home">
+</nav>
 
-    <p>WELCOME TO</p>
+<div class="hero" id="home">
 
-    <h2>TK-EMPEROR<br>COUTURE</h2>
+  <h2>Discover Your Elegance</h2>
 
-    <div class="intro">
+  <p>Beautiful women's fashion designed to make
 
-      Elegance in Every Stitch.<br>
+  you look confident, classy and unique.</p>
 
-      Style That Defines You.
+  <a class="btn" href="#collection">Explore Collection</a>
+
+</div>
+
+<section id="collection">
+
+  <h2>Our Collection</h2>
+
+  <div class="gallery">
+
+    <div class="item">
+
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600" alt="Fashion outfit">
+
+      <h3>Corporate Fashion</h3>
+
+      <p>Elegant styles for the modern woman.</p>
 
     </div>
 
-    <a class="btn" href="#collections">EXPLORE COLLECTIONS</a>
+    <div class="item">
+
+      <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600" alt="Women's fashion">
+
+      <h3>Ready-to-Wear</h3>
+
+      <p>Beautiful outfits for every occasion.</p>
+
+    </div>
+
+    <div class="item">
+
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Classy clothing">
+
+      <h3>Classy Styles</h3>
+
+      <p>Look stylish, feel confident and stand out.</p>
+
+    </div>
 
   </div>
 
-  <section id="collections">
+</section>
 
-    <h2>OUR COLLECTIONS</h2>
+<section class="about" id="about">
 
-    <p>Discover the art of timeless fashion.</p>
+  <h2>About TK Emperor Couture</h2>
 
-    <div class="collections">
+  <p>At TK Emperor Couture, we believe every woman
 
-      <div class="item">
+  deserves to feel elegant and confident.
 
-        <h3>Men's Fashion</h3>
+  We specialize in women's corporate dresses
 
-        <p>Modern style and elegance.</p>
+  and ready-to-wear fashion, bringing style
 
-      </div>
+  and elegance into every stitch.</p>
 
-      <div class="item">
+</section>
 
-        <h3>Women's Fashion</h3>
+<section id="contact">
 
-        <p>Beauty, class and confidence.</p>
+  <h2>Get in Touch</h2>
 
-      </div>
+  <p>Ready to find your perfect style?</p>
 
-      <div class="item">
+  <p>Contact us for enquiries and orders.</p>
 
-        <h3>Custom Designs</h3>
+</section>
 
-        <p>Made to express your style.</p>
+<footer>
 
-      </div>
+  <h3>TK Emperor Couture</h3>
 
-    </div>
+  <p>Elegance in every stitch. Styles that define you.</p>
 
-  </section>
+  <p>© 2026 TK Emperor Couture</p>
 
-  <section class="about" id="about">
-
-    <h2>ABOUT US</h2>
-
-    <p>
-
-      TK-EMPEROR COUTURE is about style,
-
-      confidence and the beauty of fine fashion.
-
-      Our vision is to make every outfit special
-
-      and every appearance unforgettable.
-
-    </p>
-
-  </section>
-
-  <section id="contact">
-
-    <h2>CONTACT US</h2>
-
-    <p>Interested in our designs?</p>
-
-    <p>Get in touch with TK-EMPEROR COUTURE.</p>
-
-  </section>
-
-  <footer>
-
-    &copy; 2026 TK-EMPEROR COUTURE.
-
-    All Rights Reserved.
-
-  </footer>
+</footer>
 
 </body>
 

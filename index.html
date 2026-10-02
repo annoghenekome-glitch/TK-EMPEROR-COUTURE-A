@@ -22,19 +22,19 @@ body {
 
   font-family: Arial, sans-serif;
 
-  color: #292323;
+  background: #faf8f3;
 
-  background: #fffaf7;
+  color: #292323;
 
 }
 
 header {
 
-  background: #292323;
+  background: #171717;
 
   color: white;
 
-  padding: 22px 15px;
+  padding: 22px 16px;
 
   text-align: center;
 
@@ -42,29 +42,31 @@ header {
 
 header h1 {
 
-  margin: 0;
+  color: #d8b46a;
 
-  font-size: 28px;
+  letter-spacing: 3px;
 
-  letter-spacing: 2px;
+  font-size: 25px;
 
-}
-
-header p {
-
-  color: #e5c6ad;
-
-  margin-bottom: 0;
+  margin: 5px;
 
 }
+
+header p { font-size: 13px; letter-spacing: 2px; }
 
 nav {
 
-  background: #453532;
+  display: flex;
 
-  padding: 14px;
+  justify-content: center;
 
-  text-align: center;
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+  padding: 15px 5px;
+
+  background: #242424;
 
 }
 
@@ -74,8 +76,6 @@ nav a {
 
   text-decoration: none;
 
-  margin: 0 10px;
-
   font-size: 14px;
 
 }
@@ -84,21 +84,23 @@ nav a {
 
   text-align: center;
 
-  padding: 55px 20px;
+  padding: 65px 20px;
 
-  background: #f2e5dc;
+  background: #e9e4d9;
 
 }
 
 .hero h2 {
 
-  font-size: 32px;
+  font-size: 34px;
 
-  margin: 0 0 12px;
+  margin: 0 0 15px;
 
 }
 
 .hero p {
+
+  font-size: 16px;
 
   line-height: 1.7;
 
@@ -108,91 +110,87 @@ nav a {
 
   display: inline-block;
 
-  background: #65483e;
+  background: #185b43;
 
   color: white;
 
-  padding: 13px 24px;
-
-  text-decoration: none;
+  padding: 14px 25px;
 
   margin-top: 15px;
 
-  border-radius: 4px;
+  text-decoration: none;
+
+  border-radius: 3px;
 
 }
 
-section {
+section { padding: 40px 18px; text-align: center; }
 
-  padding: 40px 18px;
+h2 { color: #185b43; }
 
-  text-align: center;
-
-}
-
-section h2 {
-
-  color: #65483e;
-
-  margin-bottom: 25px;
-
-}
-
-.gallery {
+.products {
 
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
-  gap: 20px;
+  gap: 22px;
 
   max-width: 1000px;
 
-  margin: auto;
+  margin: 25px auto;
 
 }
 
-.gallery img {
+.product {
+
+  background: white;
+
+  padding-bottom: 20px;
+
+  box-shadow: 0 3px 12px #00000012;
+
+}
+
+.product img {
 
   width: 100%;
 
-  height: 300px;
+  height: 280px;
 
   object-fit: cover;
 
-  border-radius: 5px;
-
 }
 
-.item h3 {
+.product h3 { margin: 15px 8px 8px; }
 
-  margin-bottom: 5px;
-
-}
+.product p { padding: 0 12px; line-height: 1.5; }
 
 .about {
 
-  background: #f2e5dc;
+  background: #e9e4d9;
 
   line-height: 1.8;
 
 }
 
+.contact { background: #faf8f3; }
+
 footer {
 
-  background: #292323;
+  background: #171717;
 
   color: white;
 
   text-align: center;
 
-  padding: 30px 15px;
+  padding: 22px 10px;
 
-  line-height: 1.8;
+  font-size: 13px;
 
 }
 
-footer a { color: #e5c6ad; }
+footer span { color: #d8b46a; }
 
 </style>
 
@@ -212,9 +210,9 @@ footer a { color: #e5c6ad; }
 
   <a href="#home">Home</a>
 
-  <a href="#collection">Collection</a>
+  <a href="#collection">Collections</a>
 
-  <a href="#about">About</a>
+  <a href="#about">About Us</a>
 
   <a href="#contact">Contact</a>
 
@@ -224,47 +222,49 @@ footer a { color: #e5c6ad; }
 
   <h2>Discover Your Elegance</h2>
 
-  <p>Beautiful women's fashion designed to make
+  <p>Timeless women's fashion, beautifully designed<br>
 
-  you look confident, classy and unique.</p>
+  for the modern and confident woman.</p>
 
-  <a class="btn" href="#collection">Explore Collection</a>
+  <a class="btn" href="#collection">Explore Our Collection</a>
 
 </div>
 
 <section id="collection">
 
-  <h2>Our Collection</h2>
+  <h2>Our Collections</h2>
 
-  <div class="gallery">
+  <p>Styles created to make every moment special.</p>
 
-    <div class="item">
+  <div class="products">
 
-      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600" alt="Fashion outfit">
-
-      <h3>Corporate Fashion</h3>
-
-      <p>Elegant styles for the modern woman.</p>
-
-    </div>
-
-    <div class="item">
+    <div class="product">
 
       <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600" alt="Women's fashion">
 
-      <h3>Ready-to-Wear</h3>
+      <h3>Corporate Dresses</h3>
 
-      <p>Beautiful outfits for every occasion.</p>
+      <p>Elegant styles for work, meetings and special occasions.</p>
 
     </div>
 
-    <div class="item">
+    <div class="product">
 
-      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Classy clothing">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Ready to wear fashion">
 
-      <h3>Classy Styles</h3>
+      <h3>Ready-to-Wear</h3>
 
-      <p>Look stylish, feel confident and stand out.</p>
+      <p>Modern, comfortable outfits for everyday elegance.</p>
+
+    </div>
+
+    <div class="product">
+
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600" alt="Fashion collection">
+
+      <h3>Signature Styles</h3>
+
+      <p>Unique designs with beautiful details and confident style.</p>
 
     </div>
 
@@ -276,35 +276,33 @@ footer a { color: #e5c6ad; }
 
   <h2>About TK Emperor Couture</h2>
 
-  <p>At TK Emperor Couture, we believe every woman
+  <p>At TK Emperor Couture, we believe every woman deserves
 
-  deserves to feel elegant and confident.
+  to feel elegant, confident and beautiful. We create
 
-  We specialize in women's corporate dresses
+  women's corporate dresses and ready-to-wear fashion
 
-  and ready-to-wear fashion, bringing style
-
-  and elegance into every stitch.</p>
+  with style, creativity and care.</p>
 
 </section>
 
-<section id="contact">
+<section class="contact" id="contact">
 
   <h2>Get in Touch</h2>
 
   <p>Ready to find your perfect style?</p>
 
-  <p>Contact us for enquiries and orders.</p>
+  <p>Contact TK Emperor Couture for enquiries and orders.</p>
 
 </section>
 
 <footer>
 
-  <h3>TK Emperor Couture</h3>
+  <p><span>TK EMPEROR COUTURE</span></p>
 
-  <p>Elegance in every stitch. Styles that define you.</p>
+  <p>Elegance in every stitch, styles that define you.</p>
 
-  <p>© 2026 TK Emperor Couture</p>
+  <p>© 2026 TK Emperor Couture. All rights reserved.</p>
 
 </footer>
 
